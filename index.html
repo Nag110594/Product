@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Product Launch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#" onclick="openModal('homeModal')">Home</a>
+    <a href="#" onclick="openModal('aboutModal')">About</a>
+    <a href="#" onclick="openModal('contactModal')">Contact</a>
+  </div>
+
+  <!-- Rolling Banner -->
+  <div class="rolling-banner">
+    <div class="rolling-text">
+      50% for first 100 customers! 50% for first 100 customers! 50% for first 100 customers!
+    </div>
+  </div>
+
+  <!-- Product Section -->
+  <div class="product-section">
+    <h1>Super Gadget Pro</h1>
+    <img src="https://via.placeholder.com/300" alt="Product Image">
+    <div class="product-details">
+      <p>The ultimate gadget to enhance your daily life.</p>
+      <p><strong>$199.99</strong></p>
+      <button class="buy-now-btn">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Countdown Section -->
+  <div class="countdown" id="countdown-timer">
+    Launching in: 4 Days 23 Hours 59 Minutes 46 Seconds
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2024 Product Launch. All rights reserved.
+  </div>
+
+  <!-- Modals -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('aboutModal')">&times;</span>
+      <h2>About Us</h2>
+      <p>We are dedicated to bringing you the best gadgets to enhance your life!</p>
+    </div>
+  </div>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('contactModal')">&times;</span>
+      <h2>Contact Us</h2>
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Phone:</strong> +1 123-456-7890</p>
+      <p><strong>Address:</strong> 1234 Gadget Street, Tech City</p>
+    </div>
+  </div>
+
+  <!-- Include the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

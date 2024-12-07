@@ -1,0 +1,120 @@
+/* Rolling Banner */
+.rolling-banner {
+  background-color: #ff9900;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.rolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-text 14s linear infinite;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Product Section */
+.product-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.product-section img {
+  width: 300px;
+  height: 300px;
+}
+
+.product-details {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.buy-now-btn {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.buy-now-btn:hover {
+  background-color: #e68a00;
+}
+
+/* Countdown Section */
+.countdown {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
